@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mohammed_Fares_C1_Interfaces_Grafiques</string>
+    <string name="home_title">Home</string>
+    <string name="favorite_title">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
