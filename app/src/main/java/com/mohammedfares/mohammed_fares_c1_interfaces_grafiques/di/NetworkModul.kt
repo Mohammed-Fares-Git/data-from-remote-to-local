@@ -16,10 +16,9 @@ import javax.inject.Singleton
 class NetworkModul {
 
 
-
     @Provides
     @Singleton
-    fun provideRetrofit(): Retrofit =  Retrofit.Builder()
+    fun provideRetrofit(): Retrofit = Retrofit.Builder()
         .baseUrl(Constante.API_BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
@@ -27,5 +26,6 @@ class NetworkModul {
 
     @Provides
     @Singleton
-    fun providePcApiService(retrofit: Retrofit): PcApiService = retrofit.create(PcApiService::class.java)
+    fun providePcApiService(retrofit: Retrofit): PcApiService =
+        retrofit.create(PcApiService::class.java)
 }

@@ -12,3 +12,18 @@ data class Ordinateur(
     val prix: String,
     val systeme_exploitation: String
 )
+
+
+fun Ordinateur.toLiked (): OrdinateurLikebale {
+    return OrdinateurLikebale(
+        ordinateur = this,
+        isLiked = true
+    )
+}
+
+fun Ordinateur.toNotLiked(): OrdinateurLikebale {
+    return OrdinateurLikebale(
+        ordinateur = this,
+        isLiked = false
+    )
+}
